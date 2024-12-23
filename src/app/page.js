@@ -6,6 +6,8 @@ import { Projects } from "@/components/Projects";
 import { Resume } from "@/components/Resume";
 import { Services } from "@/components/Services";
 import { Testimonials } from "@/components/Testimonials";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Home() {
   return (
@@ -16,6 +18,7 @@ export default function Home() {
       <Projects />
       <Resume />
       <Testimonials />
+      <ToastContainer />
       <Contact />
       <Footer />
     </>

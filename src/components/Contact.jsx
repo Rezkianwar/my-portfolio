@@ -6,6 +6,7 @@ import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { Cover } from "./ui/cover";
 import { Vortex } from "./ui/vortex";
+import { toast } from "react-toastify";
 
 export function Contact() {
   const [loadingMessage, setLoadingMessage] = useState({
@@ -39,14 +40,15 @@ export function Contact() {
       ) {
         setLoadingMessage({
           loading: false,
-          message: "Please fill all the fields!",
           success: false,
+        });
+        toast.error("Please fill all the fields!", {
+          position: "top-right",
         });
         return;
       }
       setLoadingMessage({
         loading: true,
-        message: "Sending...",
         success: false,
       });
 
@@ -83,20 +85,24 @@ export function Contact() {
           message: res?.message,
           success: true,
         });
+        toast.success("Always at the bottom.", {
+          position: "top-center",
+        });
       } else {
         setLoadingMessage({
           loading: false,
-          message: "Failed to send message!",
           success: false,
+        });
+        toast.error("Failed to send message!", {
+          position: "top-center",
         });
       }
     } catch (error) {
       setLoadingMessage({
         loading: false,
-        message: "Failed to send message!",
         success: false,
       });
-
+      toast.error("Failed to send message!");
       console.log("Contact form error:", error);
     }
   };
@@ -116,15 +122,6 @@ export function Contact() {
         <h2 className="font-bold text-4xl text-neutral-800 dark:text-neutral-200">
           Do You Have A Project. <Cover>Lets Discus</Cover>
         </h2>
-        {loadingMessage?.message && (
-          <p
-            className={`mt-[20px] text-[0.9rem] ${
-              loadingMessage?.success ? "text-green-500" : "text-red-500"
-            } `}
-          >
-            *{loadingMessage?.message}
-          </p>
-        )}
         <form className="my-8" onSubmit={handleSubmit}>
           <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
             <LabelInputContainer>
