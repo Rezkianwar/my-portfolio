@@ -6,7 +6,7 @@ import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 
-export default function HeroSection() {
+export function HeroSection() {
   const words = [
     {
       text: "Web & App",

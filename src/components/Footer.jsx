@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-export default function Footer() {
+export function Footer() {
   return (
     <div className="max-w-[100%] w-[100%] text-white mx-auto py-[10px] px-[20px] flex flex-wrap gap[10px] justify-between items-center border-t border-gray-800 ">
       <a href="/">
