@@ -80,16 +80,16 @@ const Skeleton = () => {
     <div className="p-8 overflow-hidden h-full relative flex flex-col items-center justify-center">
       <div className="flex flex-row flex-shrink-0 justify-center items-center gap-2">
         <Container className="circle-1">
-          <LaravelLogo className="h-8 w-8 " />
+          <JavaScriptLogo className="h-8 w-8 " />
         </Container>
         <Container className="h-14 w-14 circle-2">
-          <NextLogo className="h-8 w-8 dark:text-white" />
+          <ReactLogo className="h-8 w-8 dark:text-white" />
         </Container>
         <Container className="h-10 w-10 circle-3">
-          <ReactLogo className="h-6 w-4 dark:text-white" />
+          <NextLogo className="h-6 w-4 dark:text-white" />
         </Container>
         <Container className="h-8 w-8 circle-4">
-          <JavaScriptLogo className="h-6 w-4 " />
+          <LaravelLogo className="h-6 w-4 " />
         </Container>
         <Container className="h-6 w-6 circle-5">
           <FlutterLogo className="h-6 w-4 " />
@@ -104,19 +104,19 @@ const Skeleton = () => {
 
       <div className="flex flex-row flex-shrink-0 justify-center items-center gap-2 p-2">
         <Container className="h-6 w-6 circle-1">
-          <LaravelLogo className="h-6 w-4 " />
+          <WordpressLogo className="h-6 w-4 " />
         </Container>
         <Container className="h-8 w-8 circle-2">
-          <NextLogo className="h-6 w-4 dark:text-white" />
+          <MongoDbLogo className="h-6 w-4 dark:text-white" />
         </Container>
         <Container className="h-10 w-10 circle-3">
-          <ReactLogo className="h-6 w-4 dark:text-white" />
+          <FigmaLogo className="h-6 w-4 dark:text-white" />
         </Container>
         <Container className="h-14 w-14 circle-4">
-          <JavaScriptLogo className="h-8 w-8 " />
+          <CssLogo className="h-8 w-8 " />
         </Container>
         <Container className="circle-5">
-          <FlutterLogo className="h-8 w-8 " />
+          <HtmlLogo className="h-8 w-8 " />
         </Container>
       </div>
 
@@ -259,7 +259,7 @@ export const LaravelLogo = ({ className }) => {
     <div>
       <Image
         src="/images/laravel.svg"
-        alt="Next.js Logo"
+        alt="laravel Logo"
         width={128}
         height={28}
         className={className}
@@ -273,7 +273,7 @@ export const JavaScriptLogo = ({ className }) => {
     <div>
       <Image
         src="/images/js.svg"
-        alt="Next.js Logo"
+        alt="js Logo"
         width={128}
         height={28}
         className={className}
@@ -286,7 +286,7 @@ export const FlutterLogo = ({ className }) => {
     <div>
       <Image
         src="/images/flutter.svg"
-        alt="Next.js Logo"
+        alt="flutter Logo"
         width={128}
         height={28}
         className={className}
@@ -300,7 +300,73 @@ export const ReactLogo = ({ className }) => {
     <div>
       <Image
         src="/images/react.svg"
-        alt="Next.js Logo"
+        alt="react Logo"
+        width={128}
+        height={28}
+        className={className}
+      />
+    </div>
+  );
+};
+
+export const HtmlLogo = ({ className }) => {
+  return (
+    <div>
+      <Image
+        src="/images/html.svg"
+        alt="html Logo"
+        width={128}
+        height={28}
+        className={className}
+      />
+    </div>
+  );
+};
+export const CssLogo = ({ className }) => {
+  return (
+    <div>
+      <Image
+        src="/images/css-3.svg"
+        alt="css Logo"
+        width={128}
+        height={28}
+        className={className}
+      />
+    </div>
+  );
+};
+export const FigmaLogo = ({ className }) => {
+  return (
+    <div>
+      <Image
+        src="/images/Figma.svg"
+        alt="Figma Logo"
+        width={128}
+        height={28}
+        className={className}
+      />
+    </div>
+  );
+};
+export const MongoDbLogo = ({ className }) => {
+  return (
+    <div>
+      <Image
+        src="/images/mongodb.svg"
+        alt="MongoDb Logo"
+        width={128}
+        height={28}
+        className={className}
+      />
+    </div>
+  );
+};
+export const WordpressLogo = ({ className }) => {
+  return (
+    <div>
+      <Image
+        src="/images/wordpress.svg"
+        alt="Wordpress Logo"
         width={128}
         height={28}
         className={className}

@@ -21,6 +21,8 @@ module.exports = {
     colors: {
       ...flattenColorPalette(colors),
       // Pastikan warna yang telah diubah namanya ada di sini
+      sky: colors.sky,
+      stone: colors.stone,
       neutral: colors.neutral,
       gray: colors.gray,
       slate: colors.slate,

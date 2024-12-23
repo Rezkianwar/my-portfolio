@@ -238,15 +238,25 @@ export const Card = ({ card, index, layout = false }) => {
         <BlurImage
           src={card.src}
           alt={card.title}
-          fill
-          className="object-cover absolute z-10 inset-0"
+          width={1920}
+          height={1080}
+          className="object-cover absolute z-10 inset-0 h-full w-full"
+          priority={index === 0} // Prioritaskan loading untuk gambar pertama
         />
       </motion.button>
     </>
   );
 };
 
-export const BlurImage = ({ height, width, src, className, alt, ...rest }) => {
+export const BlurImage = ({
+  height,
+  width,
+  src,
+  className,
+  alt,
+  priority = false,
+  ...rest
+}) => {
   const [isLoading, setLoading] = useState(true);
   return (
     <Image
@@ -259,7 +269,8 @@ export const BlurImage = ({ height, width, src, className, alt, ...rest }) => {
       src={src}
       width={width}
       height={height}
-      loading="lazy"
+      quality={100}
+      priority={priority} // Hapus prop loading dan gunakan priority saja
       decoding="async"
       blurDataURL={typeof src === "string" ? src : undefined}
       alt={alt ? alt : "Background of a beautiful view"}
