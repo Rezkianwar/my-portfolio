@@ -116,7 +116,7 @@ export function HeroSection() {
           as="button"
           className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2 px-[20px]"
         >
-          <a href="#">Hire Me</a>
+          <a href="#contact">Hire Me</a>
         </HoverBorderGradient>
         <h2 className="bg-clip-text mt-[60px] text-transparent text-start mr-auto bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-2xl lg:text-4xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
           About Me
