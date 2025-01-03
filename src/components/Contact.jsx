@@ -119,10 +119,13 @@ export function Contact() {
         baseHue={120}
         className="flex  flex-col justify-center w-full h-full"
       >
-        <h2 className="font-bold text-4xl text-neutral-800 dark:text-neutral-200">
+        <h2
+          data-aos="flip-up"
+          className="font-bold text-4xl text-neutral-800 dark:text-neutral-200"
+        >
           Do You Have A Project. <Cover>Lets Discus</Cover>
         </h2>
-        <form className="my-8" onSubmit={handleSubmit}>
+        <form data-aos="zoom-in-down" className="my-8" onSubmit={handleSubmit}>
           <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
             <LabelInputContainer>
               <Label htmlFor="firstname">First name</Label>

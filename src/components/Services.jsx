@@ -62,7 +62,10 @@ export function Services() {
   ];
   return (
     <div className="mt-[20px] flex flex-col" id="services">
-      <div className="px-8 flex flex-col justify-center items-center">
+      <div
+        data-aos="flip-up"
+        className="px-8 flex flex-col justify-center items-center"
+      >
         <h2 className="mx-auto text-white text-xl md:text-3xl lg:text-5xl font-sans relative z-20 font-bold tracking-tight">
           <Cover> Our Services</Cover>.
         </h2>
@@ -71,7 +74,10 @@ export function Services() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">
+      <div
+        data-aos="zoom-out-up"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto"
+      >
         {features.map((feature, index) => (
           <Feature key={feature.title} {...feature} index={index} />
         ))}

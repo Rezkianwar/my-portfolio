@@ -40,6 +40,7 @@ export function Testimonials() {
   ];
   return (
     <div
+      data-aos="zoom-out-up"
       className="h-[50rem] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex flex-col items-center justify-center"
       id="testimonials"
     >

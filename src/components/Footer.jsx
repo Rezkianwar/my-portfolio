@@ -16,7 +16,7 @@ export function Footer() {
 
       <div className="flex gap-4">
         <a
-          href="https://www.linkedin.com/in/your-profile" // Ganti dengan link LinkedIn Anda
+          href="https://www.linkedin.com/in/RezkiAnwar" // Ganti dengan link LinkedIn Anda
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -29,7 +29,7 @@ export function Footer() {
         </a>
 
         <a
-          href="https://github.com/your-profile" // Ganti dengan link GitHub Anda
+          href="https://github.com/Rezkianwar" // Ganti dengan link GitHub Anda
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -42,7 +42,7 @@ export function Footer() {
         </a>
 
         <a
-          href="https://www.instagram.com/your-profile" // Ganti dengan link Instagram Anda
+          href="https://www.instagram.com/rezkiii.an" // Ganti dengan link Instagram Anda
           target="_blank"
           rel="noopener noreferrer"
         >

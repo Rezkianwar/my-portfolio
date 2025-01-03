@@ -57,7 +57,7 @@ export function NavBar() {
     },
   ];
   return (
-    <div className="fixed md:left-[50%] md:translate-x-[-50%] left-[400px] bottom-[50px] z-[110]">
+    <div className="fixed md:left-[50%] md:translate-x-[-50%] left-[400px] bottom-[100px] z-[110]">
       <FloatingDock items={links} />
     </div>
   );

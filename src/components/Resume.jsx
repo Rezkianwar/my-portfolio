@@ -8,7 +8,7 @@ export function Resume() {
     {
       title: "Education",
       content: (
-        <div className="flex flex-col gap-[30px]">
+        <div data-aos="fade-down-right" className="flex flex-col gap-[30px]">
           <div>
             <h4 className="text-[#f4f4f4] text-[1.8rem] font[600]">
               <Cover>Bachelor of Science in Information Technology</Cover>
@@ -24,7 +24,7 @@ export function Resume() {
     {
       title: "Achievements",
       content: (
-        <div className="flex flex-col gap-[30px]">
+        <div data-aos="fade-up-right" className="flex flex-col gap-[30px]">
           <div>
             <h4 className="text-[#f4f4f4] text-[1.8rem] font[600]">
               <Cover>CERTFICATE OF COMPETENCE - BNSP</Cover>

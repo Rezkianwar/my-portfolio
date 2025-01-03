@@ -62,7 +62,10 @@ export function HeroSection() {
   return (
     <div className="w-full overflow-x-hidden min-h-screen grid lg:grid-cols-[0.9fr_0.5fr_0.5fr] gap-6 ">
       {/* Logo Image */}
-      <div className="max-w-[700px] w-[90%] mx-auto py-[30px]">
+      <div
+        data-aos="fade-down-right"
+        className="max-w-[700px] w-[90%] mx-auto py-[30px]"
+      >
         <a href="/">
           <Image
             src="/images/Logo.png"
@@ -74,7 +77,10 @@ export function HeroSection() {
         </a>
 
         {/* Profile */}
-        <div className="flex flex-col justify-center h-[80%] mt-[40px]">
+        <div
+          data-aos="fade-right"
+          className="flex flex-col justify-center h-[80%] mt-[40px]"
+        >
           <span className="text-[#a9a9a9]  text-[18px] font-[800] font-mono ">
             Its Me{" "}
           </span>
@@ -102,7 +108,10 @@ export function HeroSection() {
       </div>
 
       {/* Profile Image */}
-      <div className="w-full h-full flex items-center hover:animate-custom-pulse  ">
+      <div
+        data-aos="zoom-in"
+        className="w-full h-full flex items-center hover:animate-custom-pulse  "
+      >
         <Image
           src="/images/me.png"
           width={800}
@@ -113,7 +122,10 @@ export function HeroSection() {
       </div>
 
       {/* About Me */}
-      <div className="w-[90%] mx-auto py-[50px]  flex flex-col items-center z-2 ">
+      <div
+        data-aos="fade-left"
+        className="w-[90%] mx-auto py-[50px]  flex flex-col items-center z-2 "
+      >
         <HoverBorderGradient
           containerClassName="rounded-full"
           as="button"
