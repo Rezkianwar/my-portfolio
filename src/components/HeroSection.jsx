@@ -75,7 +75,7 @@ export function HeroSection() {
 
         {/* Profile */}
         <div className="flex flex-col justify-center h-[80%] mt-[40px]">
-          <span className="text-[#a9a9a9] text-[18px] font-[800] font-mono">
+          <span className="text-[#a9a9a9]  text-[18px] font-[800] font-mono ">
             Its Me{" "}
           </span>
           <h2 className="bg-clip-text text-transparent text-start bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-6xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
@@ -83,12 +83,15 @@ export function HeroSection() {
             <TypewriterEffectSmooth words={words} />
             <Cover> Developer</Cover>.
           </h2>
-          <a
-            href="#"
-            className="text-white border-b border-1 border-[#525252] hover:p-[10px] hover:bg-[#5070ff2f] hover:text-blue-700 transition-all ease-in-out mr-auto py-[10px] font-[800]"
+          <HoverBorderGradient
+            containerClassName="rounded-full"
+            as="button"
+            className="dark:bg-black bg-white text-black dark:text-white  flex items-center space-x-2 px-[20px]"
           >
-            Hire Me &rarr;
-          </a>
+            <a href="#contact" className="text-white hover:text-blue-700 ">
+              Hire Me
+            </a>
+          </HoverBorderGradient>
           <div className="flex felx-row mt-[60px]">
             <AnimatedTooltip items={people} />
           </div>
@@ -116,12 +119,14 @@ export function HeroSection() {
           as="button"
           className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2 px-[20px]"
         >
-          <a href="#contact">Hire Me</a>
+          <a href="#contact" className="text-white  ">
+            Hire Me
+          </a>
         </HoverBorderGradient>
-        <h2 className="bg-clip-text mt-[60px] text-transparent text-start mr-auto bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-2xl lg:text-4xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
+        <h2 className="bg-clip-text mt-[60px] text-transparent text-start mr-auto bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white  text-2xl md:text-2xl lg:text-4xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
           About Me
         </h2>
-        <p className="max-w-xl mx-auto text-sm md:text-lg text-neutral-700 dark:text-neutral-400 text-start font-sans">
+        <p className="max-w-xl mx-auto text-sm md:text-lg text-neutral-700 dark:text-neutral-400 text-start font-sans ">
           A passionate Web & App Developer with a strong foundation in frontend
           technologies and a keen eye for design.{" "}
         </p>

@@ -1,5 +1,5 @@
 import React from "react";
-import { FloatingDock } from "@/components/ui/floating-dock";
+
 import {
   IconCodeCircle2,
   IconHome,
@@ -7,6 +7,7 @@ import {
   IconStar,
 } from "@tabler/icons-react";
 import { FileCode2Icon, SquareChartGanttIcon } from "lucide-react";
+import { FloatingDock } from "./ui/floating-dock";
 
 export function NavBar() {
   const links = [
@@ -56,12 +57,8 @@ export function NavBar() {
     },
   ];
   return (
-    <div className="fixed left-[-90%] translate-x-[-90%] md:left-[50%] md:translate-x-[-50%] bottom-[50px] z-[200]">
-      <FloatingDock
-        // only for demo, remove for production
-        mobileClassName="translate-y-20"
-        items={links}
-      />
+    <div className="fixed md:left-[50%] md:translate-x-[-50%] left-[400px] bottom-[50px] z-[110]">
+      <FloatingDock items={links} />
     </div>
   );
 }
