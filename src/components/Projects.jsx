@@ -15,7 +15,7 @@ export function Projects() {
       >
         Recent Projects
       </h2>
-      <div data-aos="zoom-in-up">
+      <div>
         <Carousel items={cards} />
       </div>
     </div>
@@ -130,9 +130,9 @@ const data = [
     content: <DummyContent2 />,
   },
   {
-    category: "Product",
-    title: "Launching the new Apple Vision Pro.",
-    src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    category: "Website",
+    title: "Launching the *******",
+    src: "/images/ComingSoon.png",
     content: <DummyContent />,
   },
 ];

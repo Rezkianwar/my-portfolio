@@ -5,6 +5,7 @@ import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { BackgroundBeams } from "@/components/ui/background-beams";
+import Link from "next/link";
 
 export function HeroSection() {
   const words = [
@@ -61,6 +62,7 @@ export function HeroSection() {
   ];
   return (
     <div className="w-full overflow-x-hidden min-h-screen grid lg:grid-cols-[0.9fr_0.5fr_0.5fr] gap-6 ">
+      <BackgroundBeams />
       {/* Logo Image */}
       <div
         data-aos="fade-down-right"
@@ -89,15 +91,27 @@ export function HeroSection() {
             <TypewriterEffectSmooth words={words} />
             <Cover> Developer</Cover>.
           </h2>
-          <HoverBorderGradient
-            containerClassName="rounded-full"
-            as="button"
-            className="dark:bg-black bg-white text-black dark:text-white  flex items-center space-x-2 px-[20px]"
-          >
-            <a href="#contact" className="text-white hover:text-blue-700 ">
-              Hire Me
-            </a>
-          </HoverBorderGradient>
+          <div className="flex flex-row gap-5">
+            <HoverBorderGradient
+              containerClassName="rounded-full"
+              as="button"
+              className="dark:bg-black bg-white text-black dark:text-white  flex items-center space-x-2 px-[20px]"
+            >
+              <a href="#contact" className="text-white hover:text-blue-700 ">
+                Hire Me
+              </a>
+            </HoverBorderGradient>
+            <Link href="/CV_RezkiAnwar.pdf" passHref>
+              {" "}
+              <button
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+                download
+              >
+                {" "}
+                Download CV{" "}
+              </button>{" "}
+            </Link>
+          </div>
           <div className="flex felx-row mt-[60px]">
             <AnimatedTooltip items={people} />
           </div>
@@ -146,10 +160,8 @@ export function HeroSection() {
           Specializing in creating user-friendly and visually appealing web and
           mobile applications.Lets build something amazing together!
         </p>
-
         <Skills />
       </div>
-      <BackgroundBeams />
     </div>
   );
 }
