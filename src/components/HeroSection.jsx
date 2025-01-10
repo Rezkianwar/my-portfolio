@@ -103,13 +103,9 @@ export function HeroSection() {
             </HoverBorderGradient>
             <Link href="/CV_RezkiAnwar.pdf" passHref>
               {" "}
-              <button
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
-                download
-              >
-                {" "}
-                Download CV{" "}
-              </button>{" "}
+              <button class="relative flex h-[45px] w-40 items-center justify-center overflow-hidden bg-gray-700 text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-blue-800 before:duration-500 before:ease-out hover:shadow-blue-800 hover:before:h-56 hover:before:w-56 rounded-full">
+                <span class="relative z-10">Download CV</span>
+              </button>
             </Link>
           </div>
           <div className="flex felx-row mt-[60px]">

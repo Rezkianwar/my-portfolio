@@ -7,6 +7,7 @@ import { Input } from "./ui/input";
 import { Cover } from "./ui/cover";
 import { Vortex } from "./ui/vortex";
 import { toast } from "react-toastify";
+import { LoadingSpinner } from "./ui/loading-spinner";
 
 export function Contact() {
   const [loadingMessage, setLoadingMessage] = useState({
@@ -174,11 +175,14 @@ export function Contact() {
           </LabelInputContainer>
 
           <button
-            className="bg-blue-900 hover:bg-blue-700 relative group/btn w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--zinc-800)_inset,0px_-1px_0px_0px_var(--zinc-800)_inset]"
+            className="relative p-2  w-full overflow-hidden border border-blue-800 bg-blue-600 text-white shadow-2xl rounded transition-all before:absolute before:left-0 before:top-0 before:h-full before:w-0 before:duration-500 after:absolute after:right-0 after:top-0 after:h-full after:w-0 after:duration-500 hover:text-white hover:shadow-blue-800 hover:before:w-2/4 hover:before:bg-blue-800 hover:after:w-2/4 hover:after:bg-blue-800"
             type="submit"
+            disabled={loadingMessage.loading}
           >
-            {!loadingMessage?.loading ? "Submit" : "....."}
-            <BottomGradient />
+            <span class="relative z-10">
+              {loadingMessage.loading ? <LoadingSpinner /> : "Send Message"}
+              <BottomGradient />
+            </span>
           </button>
 
           <div className="bg-gradient-to-r from-transparent via-neutral-300 dark:via-neutral-700 to-transparent my-8 h-[1px] w-full" />

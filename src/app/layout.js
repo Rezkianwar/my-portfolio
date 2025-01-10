@@ -22,7 +22,6 @@ export default function RootLayout({ children }) {
       duration: 1000, // Durasi animasi 1 detik
       easing: "ease-in-out", // Animasi dengan easing yang mulus
       offset: 50, // Elemen mulai teranimasi setelah 200px di bawah jendela tampilan
-      delay: 0, // Animasi dimulai tanpa penundaan
       once: true, // Animasi hanya dipicu sekali
       mirror: false, // Animasi hanya sekali saat elemen pertama kali masuk
       anchorPlacement: "top-bottom", // Animasi dipicu ketika bagian atas elemen mencapai bagian bawah viewport
