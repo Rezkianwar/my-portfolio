@@ -179,7 +179,7 @@ export function Contact() {
             type="submit"
             disabled={loadingMessage.loading}
           >
-            <span class="relative z-10">
+            <span className="relative z-10">
               {loadingMessage.loading ? <LoadingSpinner /> : "Send Message"}
               <BottomGradient />
             </span>

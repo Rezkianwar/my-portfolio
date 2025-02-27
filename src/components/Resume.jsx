@@ -1,7 +1,7 @@
-import Image from "next/image";
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 import { Cover } from "./ui/cover";
+import Image from "next/image";
 
 export function Resume() {
   const data = [
@@ -33,6 +33,20 @@ export function Resume() {
             <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
               WEB DEVELOPER
             </p>
+            <div className="flex gap-[10px] w-full">
+              <Image
+                src="/images/bnsp.jpeg"
+                alt="bns"
+                height="200"
+                width="200"
+              />
+              <Image
+                src="/images/bnsp2.jpeg"
+                alt="bns"
+                height="200"
+                width="200"
+              />
+            </div>
           </div>
 
           <div>
@@ -43,6 +57,20 @@ export function Resume() {
             <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
               2023 Complate Front-End Engineer Career With React JS
             </p>
+            <div className="flex gap-[10px] w-full">
+              <Image
+                src="/images/mbkm.jpg"
+                alt="bns"
+                height="200"
+                width="200"
+              />
+              <Image
+                src="/images/mbkm2.jpg"
+                alt="bns"
+                height="200"
+                width="200"
+              />
+            </div>
           </div>
 
           <div>
@@ -53,6 +81,20 @@ export function Resume() {
             <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
               DIGITAL MARKETING
             </p>
+            <div className="flex gap-[10px] w-full">
+              <Image
+                src="/images/digi.jpg"
+                alt="bns"
+                height="200"
+                width="200"
+              />
+              <Image
+                src="/images/digi2.jpg"
+                alt="bns"
+                height="200"
+                width="200"
+              />
+            </div>
           </div>
         </div>
       ),
